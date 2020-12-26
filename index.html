@@ -58,13 +58,14 @@
                     <use href="./images/sprite.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <!--Модальная форма-->
             <form action="#" class="modal-form">
                 <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
                 <label class="modal-form-field">
                     Имя
                     <span class="modal-form-input-wrapper">
                         <input type="text" name="user-name" class="modal-form-input">
-                        <svg class="input-svg">
+                        <svg class="input-svg" width="12" height="12">
                             <use href="./images/hw-6.svg#icon-Vector-main"></use>
                         </svg>
                     </span>
@@ -73,7 +74,7 @@
                     Телефон
                     <span class="modal-form-input-wrapper">
                         <input type="tel" name="user-tel" class="modal-form-input">
-                        <svg class="input-svg">
+                        <svg class="input-svg" width="13" height="13">
                             <use href="./images/hw-6.svg#icon-Vector-tel"></use>
                         </svg>
                     </span>
@@ -82,7 +83,7 @@
                     Почта
                     <span class="modal-form-input-wrapper">
                         <input type="email" name="user-email" class="modal-form-input">
-                        <svg class="input-svg">
+                        <svg class="input-svg" width="15" height="12">
                             <use href="./images/hw-6.svg#icon-Vector-mail"></use>
                         </svg>
                     </span>
@@ -91,10 +92,11 @@
                     Комментарий
                     <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
                 </label>
-                <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy visually-hidden">
-                <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
-                    договора</a></label>
-                <button type="submit" class="modal-form-btn">Отправить</buttom>    
+                    <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy"
+                        class="modal-form-policy visually-hidden">
+                    <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="#">Условия
+                            договора</a></label>
+                <button type="submit" class="modal-form-btn">Отправить</button>    
             </form>
         </div>
     </div>
@@ -383,8 +385,8 @@
                     <a class="contact-list-link" href="tel:+380991111111">+380991111111</a>
                 </li>
             </ul>
-        </div>
         </address>
+        </div>
       <section class="join">
           <p class="join-text">ПРИСОЕДИНЯЙТЕСЬ</p>
         <ul class="social-icons-dark">
@@ -416,9 +418,21 @@
                     </svg>
                 </a>
             </li>
+        </ul>
+          </section>
+            <section class="subscribe">
+                <p class="subscribe-title">Подпишитесь на рассылку</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="E-mail" class="subscribe-input"> 
+                    <button class="subscribe-btn" type="button">Подписаться
+                        <svg class="subscribe-svg">
+                            <use href="./images/sprite.svg#icons-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </section>
     </div>
     </div>
-    </section>
    </footer>
 
   <script src="./js/modal.js"></script>

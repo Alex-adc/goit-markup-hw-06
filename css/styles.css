@@ -40,7 +40,7 @@ img {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -395,6 +395,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  padding-bottom: 12px;
 }
 
 .modal-form-input {
@@ -406,13 +407,17 @@ body {
   transition: all 250ms linear;
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-input:hover {
   outline: none;
   border-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
-.modal-form-input:focus + .input-svg {
+.modal-form-input:focus + .input-svg,
+.modal-form-input:hover + .input-svg {
   fill: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .modal-form-field {
@@ -438,8 +443,6 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
   transition: all 250ms linear;
 }
 
@@ -454,9 +457,21 @@ body {
   transition: all 250ms linear;
 }
 
-.modal-form-message:focus {
+.modal-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.modal-form-message:focus,
+.modal-form-message:hover {
   outline: none;
   border-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .placeholder {
@@ -471,8 +486,8 @@ body {
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-text-color);
-  border: 4px solid #fff;
-  background-image: url(./images/check.svg);
+  background-image: url(../images/galochca.svg);
+  background-size: cover;
 }
 
 .modal-form-policy-text::before {
@@ -481,6 +496,50 @@ body {
   height: 15px;
   border: 1px solid #000000;
   content: "";
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.modal-form-policy-text {
+  padding-left: 13px;
+  margin-bottom: 30px;
+  color: #757575;
+}
+
+.modal-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.modal-form-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-text-color);
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /*============== END HERO ==============*/
@@ -968,6 +1027,79 @@ body {
 .footer-all {
   display: flex;
   align-items: baseline;
+}
+
+.subscribe {
+  padding-left: 93px;
+}
+
+.subscribe-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  padding-left: 16px;
+}
+
+.subscribe-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: baseline;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: none;
+  padding-left: 29px;
+}
+
+.subscribe-svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-left: 10px;
 }
 
 /*==============  END CONTACT ==============*/
